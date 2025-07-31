@@ -1,11 +1,11 @@
 import React from "react";
 import "../tailwind.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import financeImg from "../assets/finance_img.jpg";
 
 const Options: React.FC = () => {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     return (
         <div
@@ -28,7 +28,7 @@ const Options: React.FC = () => {
 
                 <button
                     className="mt-8 bg-gradient-to-r from-green-400 to-green-600 text-white font-semibold px-10 py-3 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300"
-                    // onClick={() => navigate("/login")}
+                    onClick={() => navigate("/login")}
                     >
                     Get Started
                 </button>
